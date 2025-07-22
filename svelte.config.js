@@ -9,10 +9,7 @@ const config = {
 	kit: {
 		adapter: adapter({
 			fallback: 'index.html'
-		}),
-		paths: {
-			base: '/leaflabenvironmental-github-pages'
-		}
+		})
 	}
 };
 
