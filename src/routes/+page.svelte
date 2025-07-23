@@ -577,7 +577,7 @@
 			along with three smart plugs, ready to get you started. For even greater control and insight,
 			explore our range of optional add-ons:
 		</p>
-		<div class="mx-auto grid max-w-6xl grid-cols-1 grid-cols-2 gap-8">
+		<div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-2">
 			<!-- Accessory 1: CO2 Sensor -->
 			<div class="rounded-xl bg-white p-8 shadow-lg transition-shadow hover:shadow-xl">
 				<div class="mb-4 text-green-600">
