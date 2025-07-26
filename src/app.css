@@ -1,3 +1,115 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@plugin "daisyui" {
+	themes:
+		leaflab --default,
+		leaflab_dark --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+	name: 'leaflab';
+	default: true;
+	prefersdark: false;
+	color-scheme: 'light';
+
+	/* Base Colors (Modern & Clean Light) */
+	--color-base-100: oklch(98% 0.005 120); /* Very light green-tinted white for main background */
+	--color-base-200: oklch(95% 0.008 120); /* Slightly darker base for secondary backgrounds/cards */
+	--color-base-300: oklch(92% 0.01 120); /* Even darker base for subtle differentiations */
+	--color-base-content: oklch(20% 0.015 120); /* Dark, readable text for light backgrounds */
+
+	/* Primary (Vibrant Leaf Green) */
+	--color-primary: oklch(60% 0.15 140); /* Main vibrant green, like a fresh leaf */
+	--color-primary-content: oklch(98% 0.01 120); /* Light content on primary */
+
+	/* Secondary (Cool Earthy Green) */
+	--color-secondary: oklch(50% 0.08 100); /* Muted, earthy green, slightly darker than primary */
+	--color-secondary-content: oklch(95% 0.01 120); /* Light content on secondary */
+
+	/* Accent (Electric Growth Green) */
+	--color-accent: oklch(75% 0.18 160); /* Bright, almost neon green for highlights/actions */
+	--color-accent-content: oklch(25% 0.01 120); /* Dark content on accent */
+
+	/* Neutral (Cool Greys) */
+	--color-neutral: oklch(30% 0.005 120); /* Dark grey for neutral backgrounds/elements */
+	--color-neutral-content: oklch(90% 0.005 120); /* Light content on neutral */
+
+	/* Info, Success, Warning, Error (Standard, slightly adjusted for modern feel) */
+	--color-info: oklch(65% 0.12 240); /* Cool blue for info */
+	--color-info-content: oklch(25% 0.05 240);
+	--color-success: oklch(70% 0.15 150); /* Standard green for success, slightly toned */
+	--color-success-content: oklch(25% 0.05 150);
+	--color-warning: oklch(78% 0.15 90); /* Warm yellow/orange for warning */
+	--color-warning-content: oklch(35% 0.05 90);
+	--color-error: oklch(60% 0.15 20); /* Strong red for error */
+	--color-error-content: oklch(25% 0.05 20);
+
+	/* Radius (Slightly rounded for sleek look) */
+	--radius-selector: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 1rem; /* More rounded for cards/boxes */
+
+	/* Size (Standard, subtle) */
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+
+	/* Border & Depth (Keeping it minimal and modern) */
+	--border: 1px;
+	--depth: 1; /* Subtle shadows */
+	--noise: 0; /* No noise for sleek look */
+}
+
+@plugin "daisyui/theme" {
+	name: 'leaflab_dark';
+	default: false;
+	prefersdark: false;
+	color-scheme: 'dark';
+
+	/* Base Colors (Modern & Clean Dark) */
+	--color-base-100: oklch(15% 0.01 120); /* Deep dark green-grey for main background */
+	--color-base-200: oklch(
+		18% 0.012 120
+	); /* Slightly lighter dark base for cards/secondary backgrounds */
+	--color-base-300: oklch(22% 0.015 120); /* Even lighter dark base for distinctions */
+	--color-base-content: oklch(90% 0.01 120); /* Light, readable text for dark backgrounds */
+
+	/* Primary (Vibrant Leaf Green - adapted for dark) */
+	--color-primary: oklch(60% 0.15 140); /* Same vibrant green as light, works well */
+	--color-primary-content: oklch(20% 0.01 120); /* Dark content on primary for contrast */
+
+	/* Secondary (Cool Earthy Green - adapted for dark) */
+	--color-secondary: oklch(50% 0.08 100); /* Same muted green, still effective */
+	--color-secondary-content: oklch(90% 0.01 120); /* Light content on secondary */
+
+	/* Accent (Electric Growth Green - adapted for dark) */
+	--color-accent: oklch(75% 0.18 160); /* Same bright accent, pops on dark */
+	--color-accent-content: oklch(25% 0.01 120); /* Dark content on accent */
+
+	/* Neutral (Deep Greens/Greys) */
+	--color-neutral: oklch(80% 0.005 120); /* Light grey for neutral backgrounds/elements on dark */
+	--color-neutral-content: oklch(20% 0.005 120); /* Dark content on neutral */
+
+	/* Info, Success, Warning, Error (Standard, adapted for dark) */
+	--color-info: oklch(65% 0.12 240); /* Cool blue for info */
+	--color-info-content: oklch(90% 0.05 240);
+	--color-success: oklch(70% 0.15 150); /* Standard green for success */
+	--color-success-content: oklch(90% 0.05 150);
+	--color-warning: oklch(78% 0.15 90); /* Warm yellow/orange for warning */
+	--color-warning-content: oklch(20% 0.05 90);
+	--color-error: oklch(60% 0.15 20); /* Strong red for error */
+	--color-error-content: oklch(90% 0.05 20);
+
+	/* Radius & Size (Same as light theme for consistency) */
+	--radius-selector: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 1rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+
+	/* Border & Depth (Same as light theme) */
+	--border: 1px;
+	--depth: 1;
+	--noise: 0;
+}
